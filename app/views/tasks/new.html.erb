@@ -1,0 +1,9 @@
+<h1>Add a task</h1>
+
+<%= form_for(@task) do |f| %>
+  <%= f.text_field :title, placeholder: "↳ title" %>
+  <%= f.text_field :details, placeholder: "↳ à propos" %>
+  <%= f.submit value: "create".upcase %>
+<% end %>
+
+<%= link_to "← back", tasks_path %>

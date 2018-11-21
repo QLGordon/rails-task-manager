@@ -1,0 +1,91 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$primary-color-1: rgba(220,040,030,1);
+$primary-color-75: rgba(220,040,030,.75);
+$primary-color-50: rgba(220,040,030,.50);
+$primary-color-25: rgba(220,040,030,.25);
+$primary-color-10: rgba(220,040,030,.10);
+
+$tonic-color-1: rgba(029,022,093,1);
+$tonic-color-75: rgba(029,022,093,.75);
+$tonic-color-50: rgba(029,022,093,.50);
+$tonic-color-25: rgba(029,022,093,.25);
+
+
+
+
+html {
+  background: linear-gradient(-199deg, $primary-color-10 33%, $tonic-color-25 ) no-repeat;
+  // height: 100vh;
+
+}
+
+body {
+  width: 50%;
+  height: 100vh;
+  margin: 2em auto;
+  padding: 3em 3em;
+  font-family: Helvetica;
+  background-color: rgba(255,255,255,0.95);
+  color: $primary-color-75;
+}
+h1 {
+  color: $tonic-color-1;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: $tonic-color-1;
+  &:hover { color: $primary-color-50; }
+}
+h1 {
+  font-weight: 700;
+}
+
+form {
+  margin-bottom: 2em;
+}
+
+input, textarea {
+  outline: none;
+  display: block;
+  border-style: none;
+  margin: 0px -2px;
+  padding: 1em 2em;
+  color: $primary-color-1;
+  background: $primary-color-10 ;
+  &:hover { color: $primary-color-50; }
+  &:focus { background: $primary-color-25; }
+}
+
+input[type='text']{
+  color: $primary-color-1;
+}
+::placeholder{
+  color: $primary-color-1;
+    &:focus { color: $primary-color-1; }
+}
+::selection {
+  background: $primary-color-25;
+  color: rgba(255,255,255,.9);
+}
+
+input[type='submit'] {
+  margin: 0px -2px !important;
+  font-weight: bold;
+  color: rgba(255,255,255,.9);
+  cursor: pointer;
+  background: $primary-color-75 !important;
+  &:hover {
+    background: $tonic-color-75 !important;
+    color: rgba(255,255,255,.9);
+  }
+  &:focus {
+    background: $tonic-color-1 !important;
+    color: rgba(255,255,255,0.75) !important;
+  }
+  margin: 0px;
+}
